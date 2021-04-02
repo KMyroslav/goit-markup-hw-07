@@ -2,38 +2,38 @@
   padding-bottom: 94px;
 }
 
-.specialty .component-title {
+.specialty__component-title {
   margin-bottom: 50px;
 }
 
-.specialty-list {
+.specialty__list {
   display: flex;
   flex-basis: calc(100% / 3);
 }
 
-.specialty-list .item {
+.specialty__item {
   position: relative;
   width: calc((100% - 30px * 2) / 3);
 }
 
-.specialty-list .item:not(:last-child) {
+.specialty__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.specialty-item-overlay {
-  background: rgba(47, 48, 58, 0.8);
-
-  width: 100%;
-  height: 70px;
+.specialty__overlay {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
 }
-.specialty-overlay-text {
+.specialty__overlay-text {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;

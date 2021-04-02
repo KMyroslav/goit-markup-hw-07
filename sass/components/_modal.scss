@@ -15,7 +15,7 @@
   border-radius: 4px;
 }
 
-.exit-button {
+.modal__exit-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,20 +26,25 @@
   width: 30px;
   height: 30px;
 
+  color: #000000;
+
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--button-white-bg);
 
-  transition: fill var(--primary-transition-style);
+  transition: color var(--primary-transition-style);
 }
 
-.exit-button-icon {
+.modal__exit-icon {
   width: 18px;
   height: 18px;
-  fill: #000000;
 }
-.exit-button:focus .exit-button-icon,
-.exit-button:hover .exit-button-icon {
-  fill: var(--accent);
+.modal__exit-button:focus,
+.modal__exit-button:hover {
+  color: var(--accent);
+}
+
+.modal__exit-icon {
+  fill: currentColor;
 }

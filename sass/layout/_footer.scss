@@ -4,43 +4,43 @@
   background-color: var(--accent-dark-blue-bg);
 }
 
-.footer-wrapper {
+.footer__wrapper {
   display: flex;
   align-items: baseline;
 }
 
-.footer-join-wrapper {
+.footer__join-wrapper {
   margin-left: 70px;
 }
 
-.footer-address {
+.footer__address {
   margin-top: 20px;
 }
 
-.geolocation {
+.footer__geolocation {
   margin-bottom: 9px;
 
   line-height: 1.71;
   color: var(--secondary-white-text);
 }
 
-.address-list .item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link {
+.address-list__link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 
   transition: color var(--primary-transition-style);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--accent);
 }
 
-.join-text {
+.footer__join-text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -50,20 +50,20 @@
   color: var(--secondary-white-text);
 }
 
-.footer-join-wrapper .item:not(:last-child) {
+.footer__social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-join-wrapper .social-list-item {
+.social-list__link_highlight {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-join-wrapper .social-list-item:hover,
-.footer-join-wrapper .social-list-item:focus {
+.social-list__link_highlight:hover,
+.social-list__link_highlight:focus {
   background-color: var(--accent);
 }
 
-.footer-join-wrapper .social-list-icon {
+.social-list__icon_theme-dark {
   fill: #ffffff;
 }
 
@@ -74,11 +74,11 @@
   margin-left: 93px;
 }
 
-.newsletter-signup-form {
+.newsletter-signup__form {
   display: flex;
 }
 
-.newsletter-signup-title {
+.newsletter-signup__title {
   margin-bottom: 20px;
 
   line-height: 1.14;
@@ -86,7 +86,7 @@
   color: var(--secondary-white-text);
 }
 
-.newsletter-signup-input {
+.newsletter-signup__input {
   padding: 15px 0 15px 16px;
 
   width: 358px;
@@ -103,17 +103,17 @@
   color: var(--secondary-white-text);
 }
 
-.newsletter-signup-input::placeholder {
+.newsletter-signup__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.newsletter-signup-input:focus {
+.newsletter-signup__input:focus {
   outline: none;
   border: 1px solid var(--accent);
 }
-.newsletter-signup-button {
+.newsletter-signup__button {
   display: flex;
   align-items: center;
 
@@ -135,11 +135,11 @@
   transition: background-color var(--primary-transition-style);
 }
 
-.signup-button-icon {
+.signup-button__icon {
   margin-left: 10px;
 }
 
-.newsletter-signup-button:hover,
-.newsletter-signup-button:focus {
+.newsletter-signup__button:hover,
+.newsletter-signup__button:focus {
   background-color: var(--button-accent-blue-bg);
 }
