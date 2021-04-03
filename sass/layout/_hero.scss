@@ -41,10 +41,10 @@
   background-color: var(--accent);
 
   transition: background-color var(--primary-transition-style);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--button-accent-blue-bg);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-blue-bg);
+    cursor: pointer;
+  }
 }

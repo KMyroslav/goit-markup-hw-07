@@ -34,17 +34,15 @@
   background-color: var(--button-white-bg);
 
   transition: color var(--primary-transition-style);
+
+  &:focus,
+  &:hover {
+    color: var(--accent);
+  }
 }
 
 .modal__exit-icon {
   width: 18px;
   height: 18px;
-}
-.modal__exit-button:focus,
-.modal__exit-button:hover {
-  color: var(--accent);
-}
-
-.modal__exit-icon {
   fill: currentColor;
 }

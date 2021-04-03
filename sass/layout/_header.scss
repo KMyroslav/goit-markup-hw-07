@@ -35,21 +35,26 @@
   color: var(--secondary-black-text);
 
   transition: color var(--primary-transition-style);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .nav__link_active {
   color: var(--accent);
-}
 
-.nav__link_active:after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent);
-  border-radius: 2px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+  }
 }
 
 .header-contacts {
@@ -74,13 +79,10 @@
   color: var(--primary-grey-text);
 
   transition: color var(--primary-transition-style);
-}
-
-.header-contacts__link:hover,
-.header-contacts__link:focus,
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .header-contacts__icon {

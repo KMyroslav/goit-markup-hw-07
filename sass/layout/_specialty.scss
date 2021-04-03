@@ -14,10 +14,9 @@
 .specialty__item {
   position: relative;
   width: calc((100% - 30px * 2) / 3);
-}
-
-.specialty__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .specialty__overlay {

@@ -19,9 +19,10 @@
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--primary-white-bg);
-}
-.team__item:not(:last-child) {
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__description-wrapper {

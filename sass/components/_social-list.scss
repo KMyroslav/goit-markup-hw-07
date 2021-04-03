@@ -15,12 +15,12 @@
   color: var(--icon-primary-grey);
   transition: background-color var(--primary-transition-style),
     color var(--primary-transition-style);
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--accent);
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+    color: #ffffff;
+  }
 }
 
 .social-list__icon {

@@ -45,7 +45,7 @@
   transition: fill var(--primary-transition-style);
 }
 
-.modal__form-input:focus,
+// .modal__form-input:focus,
 .modal__form-input:focus + .modal__form-icon {
   fill: var(--accent);
   border-color: var(--accent);
@@ -64,17 +64,17 @@
   outline: none;
 
   transition: border-color var(--primary-transition-style);
-}
 
-.modal__form-textarea:focus {
-  border-color: var(--accent);
-}
+  &:focus {
+    border-color: var(--accent);
+  }
 
-.modal__form-textarea::placeholder {
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    line-height: 1.14;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal__term-label {
@@ -83,18 +83,18 @@
   line-height: 1.71;
   margin: 20px 0 30px 0;
   cursor: pointer;
-}
 
-.modal__term-label::before {
-  margin-right: 8px;
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
-  border-radius: 2px;
+  &::before {
+    margin-right: 8px;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    border-radius: 2px;
 
-  transition: background-color var(--primary-transition-style);
+    transition: background-color var(--primary-transition-style);
+  }
 }
 
 .modal__term-checkbox:checked + .modal__term-label::before {
@@ -124,9 +124,9 @@
   color: var(--secondary-white-text);
 
   transition: background-color var(--primary-transition-style);
-}
 
-.modal__form-button:hover,
-.modal__form-button:focus {
-  background-color: var(--button-accent-blue-bg);
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-blue-bg);
+  }
 }

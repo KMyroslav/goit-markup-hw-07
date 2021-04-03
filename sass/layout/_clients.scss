@@ -27,13 +27,12 @@
 
   transition: color var(--primary-transition-style),
     border-color var(--primary-transition-style);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--accent);
-  color: var(--accent);
-}
+    &:hover,
+    &:focus {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
 .clients__icon {
   fill: currentColor;

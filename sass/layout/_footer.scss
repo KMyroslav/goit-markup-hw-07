@@ -33,11 +33,11 @@
   color: rgba(255, 255, 255, 0.6);
 
   transition: color var(--primary-transition-style);
-}
 
-.address-list__link:hover,
-.address-list__link:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .footer__join-text {
@@ -56,11 +56,10 @@
 
 .social-list__link_highlight {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-list__link_highlight:hover,
-.social-list__link_highlight:focus {
-  background-color: var(--accent);
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+  }
 }
 
 .social-list__icon_theme-dark {
@@ -101,18 +100,19 @@
   transition: border var(--primary-transition-style);
 
   color: var(--secondary-white-text);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent);
+  }
 }
 
-.newsletter-signup__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.newsletter-signup__input:focus {
-  outline: none;
-  border: 1px solid var(--accent);
-}
 .newsletter-signup__button {
   display: flex;
   align-items: center;
@@ -133,13 +133,13 @@
   cursor: pointer;
 
   transition: background-color var(--primary-transition-style);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-blue-bg);
+  }
 }
 
 .signup-button__icon {
   margin-left: 10px;
-}
-
-.newsletter-signup__button:hover,
-.newsletter-signup__button:focus {
-  background-color: var(--button-accent-blue-bg);
 }
