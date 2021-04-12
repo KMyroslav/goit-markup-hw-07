@@ -19,9 +19,13 @@
   }
 }
 
+.specialty__image {
+  vertical-align: bottom;
+}
+
 .specialty__overlay {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
 
   display: flex;

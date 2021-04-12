@@ -136,17 +136,13 @@ body {
   transition: color var(--primary-transition-style);
 }
 
-.modal__exit-icon {
-  width: 18px;
-  height: 18px;
-}
-
-.modal__exit-button:focus,
-.modal__exit-button:hover {
+.modal__exit-button:focus, .modal__exit-button:hover {
   color: var(--accent);
 }
 
 .modal__exit-icon {
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
@@ -203,7 +199,6 @@ body {
   transition: fill var(--primary-transition-style);
 }
 
-.modal__form-input:focus,
 .modal__form-input:focus + .modal__form-icon {
   fill: var(--accent);
   border-color: var(--accent);
@@ -303,8 +298,7 @@ body {
   transition: background-color var(--primary-transition-style);
 }
 
-.modal__form-button:hover,
-.modal__form-button:focus {
+.modal__form-button:hover, .modal__form-button:focus {
   background-color: var(--button-accent-blue-bg);
 }
 
@@ -346,8 +340,7 @@ body {
   transition: background-color var(--primary-transition-style), color var(--primary-transition-style);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent);
   color: #ffffff;
 }
@@ -423,6 +416,10 @@ body {
   transition: color var(--primary-transition-style);
 }
 
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent);
+}
+
 .nav__link_active {
   color: var(--accent);
 }
@@ -470,10 +467,7 @@ body {
   transition: color var(--primary-transition-style);
 }
 
-.header-contacts__link:hover,
-.header-contacts__link:focus,
-.nav__link:hover,
-.nav__link:focus {
+.header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent);
 }
 
@@ -532,8 +526,7 @@ body {
   transition: background-color var(--primary-transition-style);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   background-color: var(--button-accent-blue-bg);
   cursor: pointer;
 }
@@ -617,9 +610,13 @@ body {
   margin-right: 30px;
 }
 
+.specialty__image {
+  vertical-align: bottom;
+}
+
 .specialty__overlay {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,6 +665,10 @@ body {
 
 .team__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team__image {
+  vertical-align: bottom;
 }
 
 .team__description-wrapper {
@@ -729,8 +730,7 @@ body {
   transition: color var(--primary-transition-style), border-color var(--primary-transition-style);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent);
   color: var(--accent);
 }
@@ -778,8 +778,7 @@ body {
   transition: color var(--primary-transition-style);
 }
 
-.address-list__link:hover,
-.address-list__link:focus {
+.address-list__link:hover, .address-list__link:focus {
   color: var(--accent);
 }
 
@@ -799,8 +798,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-list__link_highlight:hover,
-.social-list__link_highlight:focus {
+.social-list__link_highlight:hover, .social-list__link_highlight:focus {
   background-color: var(--accent);
 }
 
@@ -898,13 +896,12 @@ body {
   transition: background-color var(--primary-transition-style);
 }
 
-.signup-button__icon {
-  margin-left: 10px;
+.newsletter-signup__button:hover, .newsletter-signup__button:focus {
+  background-color: var(--button-accent-blue-bg);
 }
 
-.newsletter-signup__button:hover,
-.newsletter-signup__button:focus {
-  background-color: var(--button-accent-blue-bg);
+.signup-button__icon {
+  margin-left: 10px;
 }
 
 .filter {
@@ -936,8 +933,7 @@ body {
   transition: background-color var(--primary-transition-style), color var(--primary-transition-style), box-shadow var(--primary-transition-style), -webkit-box-shadow var(--primary-transition-style);
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   color: var(--secondary-white-text);
   background-color: var(--button-accent-blue-bg);
   cursor: pointer;
@@ -965,8 +961,7 @@ body {
   transition: box-shadow var(--primary-transition-style), -webkit-box-shadow var(--primary-transition-style);
 }
 
-.project-list__link:hover,
-.project-list__link:focus {
+.project-list__link:hover, .project-list__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
